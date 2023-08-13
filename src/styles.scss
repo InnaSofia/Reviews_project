@@ -1,0 +1,46 @@
+.background{
+    background: url(1234.png);
+    background-position: top;
+    background-size: cover;
+    height: 600px;
+    display: grid;
+    place-items: center;
+    @media (max-width: 1900px) {
+        height: 900px;
+    }
+    @media (max-width: 500px) {
+        height: 500px;  
+    }
+
+}
+
+.container{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background-color: rgba(219, 219, 219, 0.522);
+    width: 80%;
+    display: grid;
+    place-items: center;
+}
+
+.icon{
+    font-weight: 500;
+    font-size: 25px;
+    color: rgb(29, 29, 29);
+    cursor: pointer;
+    &:active{
+        color: #d4ff00;
+    }
+}
+
+.navigation-button{
+    display: flex;
+    gap: 20px;
+}
+
+.button{
+    background: none;
+    border: none;
+}
+.heading{
+    text-align: center;
+}
