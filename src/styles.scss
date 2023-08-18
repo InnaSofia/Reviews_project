@@ -1,40 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .background{
     background: url(1234.png);
     background-position: top;
     background-size: cover;
-    height: 600px;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     @media (max-width: 1900px) {
         height: 900px;
     }
     @media (max-width: 500px) {
-        height: 500px;  
+        height: 700px;  
     }
-
+  
 }
 
 .container{
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    background-color: rgba(219, 219, 219, 0.522);
-    width: 80%;
-    display: grid;
-    place-items: center;
+    background-color: rgba(219, 219, 219, 0.881);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+    @media  (max-width: 600px)  {
+        width: 80%;
+       
+    }
 }
 
 .icon{
     font-weight: 500;
     font-size: 25px;
-    color: rgb(29, 29, 29);
+    color: rgb(90, 100, 109);
     cursor: pointer;
     &:active{
-        color: #d4ff00;
+        color: #ff9500;
     }
 }
 
 .navigation-button{
     display: flex;
-    gap: 20px;
+    gap: 50px;
+    
+    
 }
 
 .button{
@@ -43,4 +57,70 @@
 }
 .heading{
     text-align: center;
+   margin-top: 10%;
+    &_line{
+    background:#fa9614;
+    width: 65px;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+&_text{
+    font-family: 'Releway';
+    font-weight: 300;
+    margin-bottom: 2%;
+    color: #fa9614;
+}
+}
+
+
+
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+    
+
+    &_container-image{
+        width: 150px;
+        height: 150px; 
+    }
+    &_container-image{
+        width: 150px;
+        height: 150px;
+    }
+    &_image{
+        width: 100%;
+        display: block;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 13px -2px 0px 2px #ff9101;
+
+    }
+    
+    &_authors{
+        font-size: 25px;
+        margin:2% 0 ;
+        color: rgb(90, 100, 109);
+        font-weight: 600;
+
+    }
+    &_city, &_year{
+        font-size: 20px;
+        color: #bb6b04;
+        font-family: 'Times New Roman';
+    
+
+    }
+    &_text{
+     color: rgb(90, 100, 109);
+     margin:3% 0;
+    
+    }
+    
 }
