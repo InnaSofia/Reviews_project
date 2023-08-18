@@ -38,7 +38,7 @@ const reviews = [
     image: 'https://almode.ru/uploads/posts/2021-04/1618122189_53-p-silvestr-stallone-56.jpg',
     authors: 'Sylvester Stallone',
     city: 'California',
-    text: 'Remember, the mind is your best muscle. Big hands can move rocks, but big words can move mountains... Ride the brain train to success.',
+    text: 'Remember, the mind is your best muscle. Big hands can move rocks,= but big words can move mountains... Ride the brain train to success.',
     year: '6 июля 1946г.'
 }
 ]
@@ -63,7 +63,9 @@ function showReviews(){
 //наши отзывы
     containerReviews.innerHTML =`
         <div class="review">
-        <div class="review_container-image"><img class="review_image" src="${review.image}"></div>
+        <div class="review_container-image">
+        <img class="review_image" src="${review.image}"/>
+        </div>
         <div class="review_authors">${review.authors}</div>
         <div class="review_city">${review.city}</div>
         <div class="review_text">${review.text}</div>
