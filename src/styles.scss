@@ -32,6 +32,12 @@
         width: 80%;
        
     }
+    .container-reviews{
+        height: 400px;
+        @media  (max-width: 350px){
+         height:450px ;
+        }
+    }
 }
 
 .icon{
