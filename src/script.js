@@ -75,7 +75,7 @@ function showReviews(){
     }
 
 //назад
-    back.addEventListener('click', showBack)
+     back.addEventListener('click', showBack)
 function showBack(){
 // от 0 переходим к 4 (длинна массива lenght)
     if(currentReviewIndex === 0 ){
@@ -85,16 +85,16 @@ function showBack(){
         currentReviewIndex = currentReviewIndex - 1
     }
     showReviews()
-}
-  
+} 
+showReviews()
 
 
     
     //вперед
-   /* forward.addEventListener('click', showForward)
+   forward.addEventListener('click', showForward)
 
     function showForward(){
-        if(currentReviewIndex === ){
+        if(currentReviewIndex === 0 ) {
             currentReviewIndex = reviews.length + 1
         }else{
             currentReviewIndex = currentReviewIndex + 1 
@@ -102,4 +102,6 @@ function showBack(){
         showReviews()
         
     }
-    showReviews() */ 
+    
+
+    
