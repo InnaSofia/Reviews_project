@@ -50,9 +50,9 @@ const forward = document.getElementById('forward');//кнопка вперед
 const randomBtn = document.getElementById('random-btn'); // рандомная
 
 
-let start = 0
 
-let end = start + 3
+
+
 
 let currentReviewIndex = 0 //текущий отзыв, который будет в моменте(номер по массиву)
 
