@@ -47,12 +47,17 @@ const reviews = [
 const containerReviews = document.getElementById('containerReviews');//находим контейнер
 const back = document.getElementById('back');//кнопка назад
 const forward = document.getElementById('forward');//кнопка вперед
+const randomBtn = document.getElementById('random-btn'); // рандомная
 
 
+let start = 0
 
-//let reviewCounter = 1
+let end = start + 3
 
 let currentReviewIndex = 0 //текущий отзыв, который будет в моменте(номер по массиву)
+
+
+
 
 
 //функция показать отзывы
@@ -94,14 +99,19 @@ showReviews()
    forward.addEventListener('click', showForward)
 
     function showForward(){
-        if(currentReviewIndex === 0 ) {
-            currentReviewIndex = reviews.length + 1
+        if(currentReviewIndex >= reviews.length-1 ) {
+            currentReviewIndex = reviews.length - reviews.length 
         }else{
-            currentReviewIndex = currentReviewIndex + 1 
+            currentReviewIndex = currentReviewIndex + 1
         }
         showReviews()
         
     }
     
-
+//рандом
+randomBtn.addEventListener('click', Getrandom)
+function Getrandom() {
+    currentReviewIndex = Math.floor(Math.random() * reviews.length)
+   showReviews()
+}
     
